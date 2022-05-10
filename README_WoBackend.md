@@ -1,7 +1,9 @@
 # WO Backend
 
+## Run
+npm install
 
-## tables
+## Tables
 
 CREATE TABLE IF NOT EXISTS devices (
     `deviceId` int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -45,3 +47,19 @@ CREATE TABLE IF NOT EXISTS deviceOwnerDetails (
   `vat_number` varchar(20) NOT NULL
 )
 
+## POST Requests
+endpoint = http://localhot:4000/api
+
+/device
+{
+    deviceId: "NW-H-20-0017",
+    activationCode: "XB67FGC2561XDFG2"
+}
+
+/register
+{
+    deviceId: "NW-H-20-0017",
+    deviceApiKey: "489d5e8e1a4081a99da486b526a694f6",
+    devicwType: "leasing",
+    timestamp: "2021-07-01 00:00:00"
+} 

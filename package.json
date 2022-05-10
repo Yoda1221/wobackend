@@ -8,7 +8,7 @@
     "dev": "nodemon index"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bela Fekete",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",

@@ -1,4 +1,3 @@
-
 /**
  * *    GET DEVICE ID AND ACTIVATIONN CODE
  * @route   POST /api/device
@@ -23,9 +22,9 @@ const getCode = async (req,res) => {
  */
 const register = async (req, res) => {
     const { deviceId, deviceApiKey, deviceType, timestamp } = req.body
+    //  TODO: CHECK THE deviceType IS IN THE DATABASE
 
-    const devTypes = [ "unset", "restricted", "leasing", "free"]
-//  furniture.includes('chair')
+    
     if (!deviceId ) {
         res.status(400).json({ message: 'REGISTRATION FAILED!' })
     } else {
